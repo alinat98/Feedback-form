@@ -1,5 +1,7 @@
 .Feedback {
-    width: 350px;
-    margin-top: 5vmax;
+    width: auto;
+    max-width: 350px;
+    min-width: 290px;
     margin: auto;
+    margin-top: 5vmax;
 }
