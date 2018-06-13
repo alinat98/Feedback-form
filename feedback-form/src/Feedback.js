@@ -4,28 +4,26 @@ import Typography from '@material-ui/core/Typography';
 import { TextField } from '@material-ui/core';
 import './Feedback.css'
 
-const buttonStyle = {
-  background: '#56CCF2',
-  borderRadius: 3,
-  border: 0,
-  color: 'white',
-  height: 48,
-  padding: '0 30px',
-  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .30)',
-};
+// const buttonStyle = {
+//   background: '#56CCF2',
+//   borderRadius: 3,
+//   border: 0,
+//   color: 'white',
+//   height: 48,
+//   padding: '0 30px',
+//   boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .30)',
+// };
 
 class Feedback extends Component {
     render() {
       return (
         <div className="Feedback">
-            {/* <h1 className="Feedback-title">Please tell us about your experience</h1> */}
-            <Typography 
-              // headlineMapping='{display4: 'h1'}' 
+            <Typography  
               variant='headline' 
-              paragraph='true' 
+              paragraph={true} 
               align= 'center' 
               color='inherit' 
-              gutterBottom='true'
+              gutterBottom={true}
             >
               Please tell us about your experience
             </Typography>
@@ -35,7 +33,7 @@ class Feedback extends Component {
               margin="normal"
               type='name'
               helperText='*Required'
-              fullWidth='true'
+              fullWidth={true}
             />
             <br/>
             <TextField
@@ -44,7 +42,7 @@ class Feedback extends Component {
               margin="normal"
               type='email'
               helperText='*Required'
-              fullWidth='true'
+              fullWidth={true}
             />
             <br/>
             <TextField
@@ -52,9 +50,9 @@ class Feedback extends Component {
               label="Type your text here"
               margin="normal"
               type='text'
-              multiline='true'
+              multiline={true}
               helperText='*Required'
-              fullWidth='true'
+              fullWidth={true}
             />
             <br/>
             <Button variant="contained" color="primary">
